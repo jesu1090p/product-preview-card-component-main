@@ -18,7 +18,11 @@
   <div class="container">
     <div class="perfume">   
       <div class="image"> 
-        <img src="./images/image-product-desktop.jpg" alt="">
+        <picture>
+          <source media="(min-width:600px)" srcset="./images/image-product-desktop.jpg">
+          <source media="(min-width:375px)" srcset="./images/image-product-mobile.jpg">
+          <img src="./images/image-product-desktop.jpg" alt="">
+        </picture>
       </div>
        <div class="details">
         <p class="top-text">
