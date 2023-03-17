@@ -1,0 +1,122 @@
+body {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   background-color: hsl(30, 38%, 92%);
+}
+
+ 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+
+.perfume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+}
+.image img {
+    max-height: 452px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 452px;
+    max-height: 452px;
+    max-width: 300px;
+    border-radius: 0px 10px 10px 0px;
+    justify-content: space-evenly;
+}
+
+.top-text {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-size: 0.8em;
+    padding: 0px 30px 0px 30px;
+    margin: 0
+
+}
+.heading {
+    font-family: Fraunces;
+    font-weight: 700;
+    padding: 0px 30px;
+    line-height: 1;
+    margin: 0;
+    color: hsl(212, 21%, 14%);
+}
+
+.subheading {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0px 30px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.prices {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: flex-start;
+    column-gap: 15px;
+    padding: 0px 30px;
+    margin: 0;
+}
+.discount {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.regular {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin: 0
+}
+
+.cart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 0px 30px;
+    padding: 14px 0px 14px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    display: flex;
+}
+.link {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;   
+}
+
+@media print {
+    * {
+        display: none;
+    }
+}
