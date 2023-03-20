@@ -5,32 +5,40 @@ body {
    background-color: hsl(30, 38%, 92%);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
     .container {
         display: flex;
-        flex-direction: column;
-        width: 90%;        
+        justify-content: center;
+        margin: 2em 0em;
+        
     }
     
     .perfume {
-        display: flex;       
-    }
-    
-    .image {
         display: flex;
-        width: 100%;
+        flex-direction: column;
+        max-width: 90%;
     }
-    .image picture {
-        border-radius: 0px 10px 10px 0px;
-        max-width: 100%;
+
+    picture {
+        height: auto;
+        padding-bottom: 0;
+    }
+
+    .image img {
+        max-height: auto;
+        border-radius: 10px 10px 0px 0px;
+        
+        max-width: 90vw;
     }
     
     .details {
         display: flex;
         flex-direction: column;
         background-color: hsl(0, 0%, 100%);
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 0px 10px 10px;
         justify-content: space-evenly;
+        row-gap: 1em;
+        padding: 10px 25px 0px 20px;
     }
     
     .top-text {
@@ -39,14 +47,12 @@ body {
         color: hsl(228, 12%, 48%);
         letter-spacing: 5px;
         font-size: 0.8em;
-        padding: 0px 30px 0px 30px;
-        margin: 0
+        margin: 0;
     
     }
     .heading {
-        font-family: Fraunces;
+        font-family: 'Fraunces', serif;
         font-weight: 700;
-        padding: 0px 30px;
         line-height: 1;
         margin: 0;
         color: hsl(212, 21%, 14%);
@@ -57,7 +63,6 @@ body {
         color: hsl(228, 12%, 48%);
         font-weight: 500;
         font-size: 14px;
-        padding: 0px 30px;
         margin: 0;
         line-height: 1.5;
     }
@@ -68,7 +73,6 @@ body {
         vertical-align: middle;
         justify-content: flex-start;
         column-gap: 15px;
-        padding: 0px 30px;
         margin: 0;
     }
     .discount {
@@ -91,11 +95,11 @@ body {
         flex-direction: row;
         justify-content: center;
         vertical-align: middle;
-        margin: 0px 30px;
         padding: 14px 0px 14px;
         background-color: hsl(158, 36%, 37%);
         border-radius: 8px;
         cursor: pointer;
+        margin-bottom: 1.5em;
     }
     
     .cart-icon {
@@ -111,7 +115,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1440px), (min-width: 600px) {
+@media screen and (min-width: 768px), (min-width: 1440px) {
 .container {
     display: flex;
     justify-content: center;
@@ -123,6 +127,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
 }
 
 .image {
