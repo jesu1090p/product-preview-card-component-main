@@ -26,9 +26,9 @@ body {
 
     .image img {
         max-height: auto;
-        border-radius: 10px 10px 0px 0px;
-        
+        border-radius: 10px 10px 0px 0px;        
         max-width: 90vw;
+        display: flex;
     }
     
     .details {
@@ -47,7 +47,7 @@ body {
         color: hsl(228, 12%, 48%);
         letter-spacing: 5px;
         font-size: 0.8em;
-        margin: 0;
+        margin-top: 2em;
     
     }
     .heading {
@@ -128,12 +128,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    
 }
 
 .image {
     display: flex;
 }
 .image img {
+    display: flex;
     max-height: 452px;
     border-radius: 10px 0px 0px 10px;
 }
@@ -144,9 +146,10 @@ body {
     background-color: hsl(0, 0%, 100%);
     min-height: 452px;
     max-height: 452px;
-    max-width: 300px;
+    max-width: 240px;
     border-radius: 0px 10px 10px 0px;
     justify-content: space-evenly;
+    padding: 0px 30px 0px 30px;
 }
 
 .top-text {
@@ -155,14 +158,11 @@ body {
     color: hsl(228, 12%, 48%);
     letter-spacing: 5px;
     font-size: 0.8em;
-    padding: 0px 30px 0px 30px;
-    margin: 0
 
 }
 .heading {
     font-family: Fraunces;
     font-weight: 700;
-    padding: 0px 30px;
     line-height: 1;
     margin: 0;
     color: hsl(212, 21%, 14%);
@@ -173,7 +173,6 @@ body {
     color: hsl(228, 12%, 48%);
     font-weight: 500;
     font-size: 14px;
-    padding: 0px 30px;
     margin: 0;
     line-height: 1.5;
 }
@@ -184,7 +183,6 @@ body {
     vertical-align: middle;
     justify-content: flex-start;
     column-gap: 15px;
-    padding: 0px 30px;
     margin: 0;
 }
 .discount {
@@ -207,7 +205,6 @@ body {
     flex-direction: row;
     justify-content: center;
     vertical-align: middle;
-    margin: 0px 30px;
     padding: 14px 0px 14px;
     background-color: hsl(158, 36%, 37%);
     border-radius: 8px;
